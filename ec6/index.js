@@ -107,3 +107,31 @@ console.log(obj);
 //es6
 obj2 = { name, age };
 console.log(obj2);
+
+/*
+ *ARROW FUNCTIONS
+ */
+const names = [
+  { name: 'Oscar', age: 32 },
+  { name: 'Yesica', age: 27 }
+]
+
+let listOfNames = names.map(function (item) {
+  console.log(item.name);
+})
+
+let listOfNames2 = names.map(item => console.log(item.name));
+
+const listOfNames3 = (name, age, country) => {
+  ... 
+}
+
+const listOfNames4 = name => {
+  ...
+}
+
+const square = num => num * num;
+
+
+
+
