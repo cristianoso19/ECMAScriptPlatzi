@@ -93,3 +93,17 @@ console.log(globalVar);
 const a = "b";
 a = "a";
 console.log(a);
+
+/*
+ *OBJETOS MEJORADOS
+ */
+
+let name = "Cris";
+let age = 32;
+
+//es5
+obj = { name: name, age: age };
+console.log(obj);
+//es6
+obj2 = { name, age };
+console.log(obj2);
