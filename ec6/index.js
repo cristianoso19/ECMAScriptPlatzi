@@ -115,11 +115,11 @@ const names = [
   { name: 'Oscar', age: 32 },
   { name: 'Yesica', age: 27 }
 ]
-
+//ES5
 let listOfNames = names.map(function (item) {
   console.log(item.name);
 })
-
+//ES6
 let listOfNames2 = names.map(item => console.log(item.name));
 
 const listOfNames3 = (name, age, country) => {
