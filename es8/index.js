@@ -37,3 +37,38 @@ console.log(string.padStart(7, "hi"));
 console.log(string.padEnd(12, "----"));
 // Para que nos podria servir:
 // Lista de un menu para la impresion
+
+/*
+ *Trailing comma
+ */
+// Ahora para no cometer errores colocar
+// una , al final del ultimo objeto.
+const obj = {
+  name : "Cris",
+};
+
+/*
+ *ASYNC AWAIT
+ */
+const helloWorld = () => {
+  return new Promise((resolve, reject) => {
+    true ? setTimeout(() => resolve("Hello World"), 3000)
+         : reject(new Error("Test Error"));
+  });
+};
+
+const helloAsync = async () => {
+  const hello = await helloWorld();
+  console.log(hello);
+};
+helloAsync();
+// TRABAJAR DE FORMA CORRECTA
+const anotherFuction = async () => {
+  try {
+    const hello = await helloWorld();
+    console.log(hello);
+  } catch (error) {
+    console.log(error);
+  }
+};
+anotherFuction();
