@@ -26,3 +26,14 @@ const data = {
 const values = Object.values(data);
 console.log(values);
 console.log(values.length);
+
+/*
+ *Padding
+ */
+// Agregar cadenas al inicio de un string
+const string = "hello";
+console.log(string.padStart(7, "hi"));
+// Agregar cadenas al final de un string
+console.log(string.padEnd(12, "----"));
+// Para que nos podria servir:
+// Lista de un menu para la impresion
